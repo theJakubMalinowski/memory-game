@@ -48,8 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: 'hotdog',
       img: 'images/hotdog.png'
-    }
+    },
   ]
-});
+  console.log(cardArray)
 
-  
+
+  cardArray.sort(()=> 0.5 - Math.random())
+  const gridDisplay = document.querySelector('#grid')
+  console.log(gridDisplay)
+
+});
