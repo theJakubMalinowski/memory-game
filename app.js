@@ -57,4 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const gridDisplay = document.querySelector('#grid')
   console.log(gridDisplay)
 
+  // Create "for" loop
+
+  function createBoard(){
+    for (let i=0; i < 10; i++){
+      const card = document.createElement('img')
+      card.setAttribute('src', 'images/blank.png')
+      card.setAttribute('data-id', i)
+      gridDisplay.appendChild(card)
+    }
+  }
+  createBoard()
 });
